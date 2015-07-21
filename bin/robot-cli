@@ -1,0 +1,10 @@
+#!/usr/bin/ruby
+
+require 'pathname'
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path("../../Gemfile", Pathname.new(__FILE__).realpath)
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'robot_cli'
+
+Solution::Robot::Cli.start
