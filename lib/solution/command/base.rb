@@ -8,7 +8,7 @@ module Solution
 			end
 			
 			def do(params = {})
-				#put defaut code here
+				#put default code here
 			end
 
 			private

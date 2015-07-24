@@ -1,9 +1,6 @@
-module Solution
-	module Command
-		class Report < Base
-			def do(params = {})
-				puts @solution.toy
-			end
-		end
+class Solution::Command::Report < Solution::Command::Base
+
+	def do(params = {})
+		puts @solution.toy
 	end
 end
