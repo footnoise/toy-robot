@@ -1,4 +1,5 @@
 [![Code Climate](https://codeclimate.com/github/footnoise/toy-robot/badges/gpa.svg)](https://codeclimate.com/github/footnoise/toy-robot)
+[![Test Coverage](https://codeclimate.com/github/footnoise/toy-robot/badges/coverage.svg)](https://codeclimate.com/github/footnoise/toy-robot/coverage)
 
 Classic Toy Robot Simulator
 ===================
