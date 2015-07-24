@@ -27,4 +27,10 @@ describe Solution::Processor do
 
     end
   end
+
+  context ".to_system_value" do
+    subject { Solution::Processor.to_system_value("PLACE") }
+    it { expect(subject).to eq :place }
+  end
+
 end

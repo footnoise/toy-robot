@@ -7,6 +7,15 @@ require 'processor'
 require 'validator'
 require 'user_input'
 
+#validators
+require 'validators/param/base'
+require 'validators/param/number'
+require 'validators/param/faces'
+
+require 'validators/command/base'
+require 'validators/command/place'
+require 'validators/command/default'
+
 #exceptions
 require 'exceptions/wrong_parameters'
 require 'exceptions/command_not_found'

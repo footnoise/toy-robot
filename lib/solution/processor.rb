@@ -17,6 +17,10 @@ module Solution
       run(input) if @validator.valid?(input) 
     end
 
+    def self.to_system_value(value)
+      value.downcase.to_sym
+    end
+
     private
 
     def register(cmd)
@@ -28,7 +32,7 @@ module Solution
     end
 
     def run(input)
-      @commands[@validator.to_system_value(input.command)].do(input.valid_params)
+      @commands[self.class.to_system_value(input.command)].do(input.valid_params)
     end
   end
 end

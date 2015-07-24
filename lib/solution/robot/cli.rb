@@ -12,7 +12,7 @@ module Solution
           
         rescue  SystemExit, Interrupt
           exit(1)
-        rescue Exception => e 
+        rescue Exception => e
           puts e.message
           retry
         end

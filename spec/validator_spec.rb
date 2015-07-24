@@ -183,11 +183,6 @@ describe Solution::Validator do
   
   end
 
-  context ".to_system_value" do
-  	subject { validator.to_system_value("PLACE") }
-  	it { expect(subject).to eq :place }
-  end
-
   context "checking the first command" do
   	let(:validator) { Solution::Validator.new(Solution::Processor.new(Solution::Table.new()))}
 
